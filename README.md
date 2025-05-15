@@ -24,5 +24,5 @@ documentation.
 
 ## Contributors License Agreement
 
-Contributors of the project do not need to sign a Contributors License Agreement, but it is advised to sign their
+Contributors of the project do not need to sign a Contributors License Agreement, but it is recommended to sign their
 commits as a sign that they follow the [Developer Certificate of Origin](https://developercertificate.org/).
