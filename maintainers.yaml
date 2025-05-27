@@ -1,0 +1,56 @@
+maintainers:
+- name: Istvan Kispal
+  email: istvan.kispal@nokia.com
+  company: Nokia
+  projects:
+    - krm-functions-sdk
+    - krm-functions-catalog
+    - kpt
+- name: Liam Fallon
+  email: liam.fallon@est.tech
+  Company: Ericsson Software Technology
+  projects:
+    - krm-functions-sdk
+    - krm-functions-catalog
+    - kpt
+- name: Ciaran Johnston
+  email: ciaran.johnston@ericsson.com
+  company: Ericsson
+  projects:
+    - governance
+    - .github
+- name: Gergely Csatari
+  email: gergely.csatari@nokia.com
+  company: Nokia
+  projects:
+    - governance
+    - .github
+
+emeritus-maintainers:
+- name: Anna Song
+  email: annasong@google.com
+  company: Google
+- name: Frank Farzan
+  email: frankf@google.com
+  company: Google
+- name: Mengqi Yu
+  email: mengqiy@google.com
+  company: Google
+- name: Natasha Sarkar
+  email: natashasarkar@google.com
+  company: Google
+- name: Phani Teja Marupaka
+  email: pmarupaka@google.com
+  company: Google
+- name: Prachi Pendse
+  email: prachirp@google.com
+  company: Google
+- name: Sunil Arora
+  email: sunilarora@google.com
+  company: Google
+- name: Yuwen Ma
+  email: yuwenma@google.com
+  company: Google
+- name: Morten Torkildsen
+  email: mortent@google.com
+  company: Google
