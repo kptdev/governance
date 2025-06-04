@@ -1,5 +1,6 @@
 maintainers:
 - name: Istvan Kispal
+  github: kispaljr
   email: istvan.kispal@nokia.com
   company: Nokia
   projects:
@@ -9,18 +10,21 @@ maintainers:
 - name: Liam Fallon
   email: liam.fallon@est.tech
   Company: Ericsson Software Technology
+  github: liamfallon
   projects:
     - krm-functions-sdk
     - krm-functions-catalog
     - kpt
 - name: Ciaran Johnston
   email: ciaran.johnston@ericsson.com
+  github: ciaranjohnston
   company: Ericsson
   projects:
     - governance
     - .github
 - name: Gergely Csatari
   email: gergely.csatari@nokia.com
+  github: CsatariGergely
   company: Nokia
   projects:
     - governance
