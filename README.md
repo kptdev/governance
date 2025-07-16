@@ -16,6 +16,10 @@ approvals are needed to merge a pr.
 
 Release handling is described in the [release handling document](release-handling.md)
 
+## Repository settings
+
+All repos should have the settings described in the [repo settings document](repo-settings.md)
+
 ## License
 
 All repos of the kpt project use the [Apache Licence 2.0](https://www.apache.org/licenses/LICENSE-2.0) for code and the
