@@ -5,6 +5,10 @@
 Repositories in the kpt organisation are licensed with the Apache License 2.0 for code and CC BY 4.0 for documentation.
 To express this every repo should have a [`LICENSE`](LICENSE) and a [`LICENSE-documentation`](LICENSE-documentation).
 
+## Code of Conduct
+
+A [`code-of-conduct.md`](code-of-conduct.md) file with the same content as [this](code-of-conduct.mds). 
+
 ## README
 
 Every repo should have a README.md file with at least the following content: 
