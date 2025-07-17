@@ -19,6 +19,19 @@ Every repo should have a README.md file with at least the following content:
 - A "Governance" section with the text "The governance of the kpt project and KRM Functiona Catalog are described in the governance repo.". For an example see the [README.md of the kpt repo](https://github.com/kptdev/kpt/blob/main/README.md?plain=1).
 - A "Code of Conduct" section with the text "The kpt project and the KRM Functions Catalog are following the CNCF Code of Conduct. More information and links about the CNCF Code of Conduct are here.". For an example see the [README.md of the kpt repo](https://github.com/kptdev/kpt/blob/main/README.md?plain=1).
 - A "CNCF" section with the text "The kpt project including the KRM Functions Catalog is a CNCF Sandbox project.". For an example see the [README.md of the kpt repo](https://github.com/kptdev/kpt/blob/main/README.md?plain=1).
+- [OpenSSF Best Practices Badge](#openssf-best-practices)
+- FOSSA Licenses Scanning badge and status
+
+## OpenSSF Best Practices
+
+To get the OpenSSF Best Practices
+
+1. [Add](https://www.bestpractices.dev/en/projects/new) the repo to the OpenSSF Best Practices list
+2. Add the embedd code from the projects OpenSSF Best Practices page to the README file. For example the kpt repos OpenSSF Best Practices page is [this](https://www.bestpractices.dev/en/projects/10656).
+
+## FOSSA
+
+To get the FOSSA lincese scaning badge and status the repo should be onboarded to FOSSA.s
 
 ## CODEOWNERS
 
