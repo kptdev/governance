@@ -31,7 +31,7 @@ To get the OpenSSF Best Practices
 
 ## FOSSA
 
-To get the FOSSA lincese scaning badge and status the repo should be onboarded to FOSSA.s
+To get the FOSSA lincese scaning badge and status the repo should be onboarded to FOSSA.
 
 ## CODEOWNERS
 
