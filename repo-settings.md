@@ -27,7 +27,7 @@ Every repo should have a README.md file with at least the following content:
 To get the OpenSSF Best Practices
 
 1. [Add](https://www.bestpractices.dev/en/projects/new) the repo to the OpenSSF Best Practices list
-2. Add the embedd code from the projects OpenSSF Best Practices page to the README file. For example the kpt repos OpenSSF Best Practices page is [this](https://www.bestpractices.dev/en/projects/10656).
+2. Add the embedded code from the projects OpenSSF Best Practices page to the README file. For example the kpt repositories, the OpenSSF Best Practices page is [this](https://www.bestpractices.dev/en/projects/10656).
 
 ## FOSSA
 
