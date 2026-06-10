@@ -10,7 +10,7 @@ maintainers:
     - porch
 - name: Liam Fallon
   email: liam.fallon@est.tech
-  Company: Ericsson Software Technology
+  company: Ericsson Software Technology
   github: liamfallon
   projects:
     - krm-functions-sdk
