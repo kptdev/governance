@@ -4,28 +4,8 @@ This is currently a work-in-progress, based on ongoing discussions in the kpt de
 
 ### Semantic Versioning
 
-We follow semantic versioning. This can mean we have to reject non-backward-compatible changes until
-a breaking release in order to preserve backward compatibility.
-
-For kpt this means:
-
-Packages:
-* Package format MUST NOT change
-* Optional fields can be added
-
-Command line:
-* Subcommands MUST NOT be removed
-* Subcommands SHOULD NOT change in meaning
-* Command line flags MUST NOT be deleted
-* Command line flags SHOULD NOT change in meaning
-
-Code: 
-* Existing behaviours MUST NOT change
-
-Compatibility with Kubernetes:
-TBD
-
-During a major release, all code is subject to revision, but package backward compatibility SHOULD be retained.
+We follow semantic versioning. See [VERSIONING.md](VERSIONING.md) for the full versioning strategy,
+including compatibility rules, floating tags, and breaking change definitions.
 
 ### Issue Triaging
 
@@ -63,7 +43,7 @@ A PR can only be merged only if:
 
 Corresponding to SemVer, we have three different types of release:
 * Major: 1.0.0, 2.0.0, etc. Breaks compatibility with previous releases.
-* Minor: 2.1.0, 2.2.0, etc. Maintains compatibility per our SemVer rules above, but may add new features, fix bugs.
+* Minor: 2.1.0, 2.2.0, etc. Maintains compatibility per our [versioning rules](VERSIONING.md), but may add new features, fix bugs.
 * Patch: 2.1.1, 2.1.2, etc. Maintains compatibility, adds no features, but fixes bugs.
 
 Major releases and Minor releases are done by tagging *main* with the version number, and then running the release scripts (TBD).
