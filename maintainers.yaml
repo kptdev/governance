@@ -7,14 +7,16 @@ maintainers:
     - krm-functions-sdk
     - krm-functions-catalog
     - kpt
+    - porch
 - name: Liam Fallon
   email: liam.fallon@est.tech
-  Company: Ericsson Software Technology
+  company: Ericsson Software Technology
   github: liamfallon
   projects:
     - krm-functions-sdk
     - krm-functions-catalog
     - kpt
+    - porch
 - name: Ciaran Johnston
   email: ciaran.johnston@ericsson.com
   github: ciaranjohnston
@@ -29,6 +31,18 @@ maintainers:
   projects:
     - governance
     - .github
+- name: Fiachra Corcoran
+  email: fiachra.corcoran@est.tech
+  github: efiacor
+  company: Ericsson Software Technology
+  projects:
+    - porch
+- name: Laszlo Mozes
+  email: laszlo.mozes@nokia.com
+  github: mozesl-nokia
+  company: Nokia
+  projects:
+    - porch
 
 emeritus-maintainers:
 - name: Anna Song
