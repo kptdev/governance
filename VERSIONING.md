@@ -8,6 +8,18 @@ We use [semantic versioning](https://semver.org/) for all release artifacts.
 Releases with a fully specified version (e.g. `vX.Y.Z`) are immutable and will
 never be changed.
 
+## Pre-release Versions
+
+Pre-releases use the form `vX.Y.Z-pre.<N>`, where `<N>` is an integer that
+increases by one for each successive pre-release, starting at `1` (matching the
+pattern `v1.2.3-pre.[0-9]+`). For example: `v1.2.3-pre.1`, `v1.2.3-pre.1`.
+
+- `-pre.<N>` is the single, canonical identifier the kpt project uses to mark a
+  pre-release.
+- A pre-release publishes its own immutable version tag (e.g. `v1.2.3-pre.1`)
+  and MUST NOT move the mutable `stable`, floating `vX.Y` / `vX`, or `latest`
+  tags (see below).
+
 ## Floating Tags
 
 We support abbreviated SemVer tags as floating tags:
@@ -20,15 +32,44 @@ We support abbreviated SemVer tags as floating tags:
   For example, `v1` initially points to `v1.2.0`. After `v1.3.0` is released,
   `v1` is updated to point to `v1.3.0`.
 
-These floating tags apply to container images and CLI binaries. If Go modules are
-published, they use fully specified versions (`vX.Y.Z`) and do not use floating tags.
+These floating tags apply to container images and CLI binaries. They track only
+non-prerelease releases and are never moved to a pre-release (see
+[Pre-release Versions](#pre-release-versions)). If Go modules are published,
+they use fully specified versions (`vX.Y.Z`) and do not use floating tags.
 
 ## Latest Tag
 
 The `latest` tag is supported on all container images and points to the most
-recent release. However, it provides no compatibility or stability guarantee.
-The `latest` tag should only be used for testing and development, not in
-production environments.
+recent development build. It is updated on every merge to the `main` branch.
+The `latest` tag provides no compatibility or stability guarantee and should
+only be used for testing and development, never in production environments.
+
+## Stable Tag
+
+The `stable` tag is supported on all container images and points to the most
+recent non-prerelease release. It is updated on every GitHub Release that is
+not marked as a pre-release.
+
+- Pre-releases (`vX.Y.Z-pre.<N>`, e.g. `v1.2.3-pre.1`; see
+  [Pre-release Versions](#pre-release-versions)) publish their own immutable
+  version tag including the pre-release identifier (e.g. `v1.2.3-pre.1`, not
+  `v1.2.3`). The automated release process MUST NOT move the `stable` tag for a
+  pre-release.
+- If a repository has not yet published any non-prerelease release, `stable` is
+  not published until the first such release exists.
+- `stable` normally follows the latest release automatically. Re-pointing
+  `stable` to an older release is a manual, permission-gated action performed by
+  a maintainer.
+
+Unlike immutable `vX.Y.Z` tags, `stable` is mutable and moves forward with each
+new non-prerelease release. Pin the full `vX.Y.Z` version for reproducible
+builds.
+
+### Scope: images and binaries
+
+The mutable `latest` and `stable` tags apply to container images. CLI binaries
+and other release archives continue to use immutable `vX.Y.Z` tags and the
+floating `vX.Y` / `vX` tags.
 
 ## Breaking Changes
 
@@ -58,8 +99,8 @@ For pre v1.0.0 versions (major version is always `0`):
 - **Patch version bump**: bug fixes, security fixes, and backward-compatible
   features.
 
-Pre-release versions (e.g. `v1.0.0-beta.N`) are unstable and may contain
-breaking changes between any two releases.
+Pre-release versions (`vX.Y.Z-pre.<N>`, e.g. `v1.0.0-pre.0`) are unstable and
+may contain breaking changes between any two releases.
 
 ## Compatibility Rules
 
@@ -97,5 +138,6 @@ compatibility SHOULD be retained.
   deterministic, reproducible builds.
 - Use floating tags (`vX.Y`, `vX`) when you want to automatically receive
   security and bug fixes with less maintenance overhead.
-- Avoid using the `latest` tag in production.
+- Avoid using the `latest` (development) tag in production; prefer `stable` or a
+  pinned `vX.Y.Z` version.
 - Read release notes before upgrading, especially across minor versions.
