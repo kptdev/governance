@@ -48,6 +48,17 @@ Corresponding to SemVer, we have three different types of release:
 
 Major releases and Minor releases are done by tagging *main* with the version number, and then running the release scripts (TBD).
 
+#### Pre-releases
+
+Any of the above releases may be preceded by one or more pre-releases used to validate a release candidate before it is 
+promoted. Pre-releases use the canonical `vX.Y.Z-pre.<N>` form defined in [VERSIONING.md](VERSIONING.md#pre-release-versions) 
+(e.g. `v1.3.0-pre.1`), where `<N>` increments per successive pre-release starting at `1`.
+
+A pre-release publishes its own immutable version tag (including the `-pre.<N>` identifier) and MUST NOT move the mutable 
+`stable`, floating `vX.Y` / `vX`, or `latest` tags. On container images, the mutable `latest` tag tracks the most recent 
+development build (updated on every merge to `main`) and `stable` tracks the most recent non-prerelease release. See
+[VERSIONING.md](VERSIONING.md#latest-tag) for the full tag semantics.
+
 Patch versions are done by a more complex process. They start from the release-X.Y branch and cherry-pick from main.
 A release branch is forked from the last minor release, and is then maintained in parallel with the *main*:
 
