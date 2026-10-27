@@ -4,9 +4,9 @@ This document describes the versioning strategy for the kpt project.
 
 ## Semantic Versioning (SemVer)
 
-We use [semantic versioning](https://semver.org/) for all release artifacts.
-Releases with a fully specified version (e.g. `vX.Y.Z`) are immutable and will
-never be changed.
+We use a ***modified***[^1][^2] kind of [semantic versioning](https://semver.org/) for all release artifacts.
+Releases with a fully specified version (e.g. `vX.Y.Z`) should
+not change, except in extreme circumstances[^3].
 
 ## Pre-release Versions
 
@@ -77,15 +77,16 @@ We define a breaking change as: for any given valid input, the software produces
 a different result on a user-facing surface, or a previously supported input is
 no longer accepted.
 
-## Backwards Compatibility
+## Backward Compatibility
 
 For versions v1.0.0 and later:
 
 - **Major version bump**: breaking major changes that require a Go module import path
   change (e.g. `module/v2`).
-- **Minor version bump**: may contain breaking changes, new features, or
+- **Minor version bump**: *may contain breaking changes*[^1], new features, or
   improvements.
-- **Patch version bump**: bug fixes and security fixes only.
+- **Patch version bump**: backward-compatible *small additive changes*[^2],
+  bug fixes, and security fixes only.
 
 For pre v1.0.0 versions (major version is always `0`):
 
@@ -141,3 +142,7 @@ compatibility SHOULD be retained.
 - Avoid using the `latest` (development) tag in production; prefer `stable` or a
   pinned `vX.Y.Z` version.
 - Read release notes before upgrading, especially across minor versions.
+
+[^1]: In standard semantic versioning, minor versions cannot contain breaking changes.
+[^2]: In standard semantic versioning, patch versions may only contain fixes.
+[^3]: For example, broken `ensure-name-substring` releases were addressed by overwriting their container images with builds that fail with a message to use a different version.
