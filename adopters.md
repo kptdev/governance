@@ -1,7 +1,7 @@
 # Adopters of kpt
 
-kpt is trusted by organisation wordwide for production Kubernetes configuration editing and
-manageent. 
+kpt is trusted by organizations worldwide for production Kubernetes configuration editing and
+management.
 
 ## Enterprise Adopters
 
@@ -25,7 +25,7 @@ Interested in joining the kpt community? Here's how to get started:
 
 If your organization is using kpt and would like to be listed here, please:
 
-1. Submit a pull request to our [governance repository](https://github.com/kptdev/governance) ([adopters list in the markdown file](https://github.com/kptdev/governance/blob/main/adopters.md).
+1. Submit a pull request to our [governance repository](https://github.com/kptdev/governance) ([adopters list in the markdown file](https://github.com/kptdev/governance/blob/main/adopters.md)).
 2. Include your organization name and use case.
 3. Please keep the list in alphabetical order.
 4. Provide any relevant metrics or success stories.
