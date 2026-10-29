@@ -26,9 +26,9 @@ code owners of the repo. Code owners are defined in the CODEOWNERS file in each 
   [commnuity calls](https://github.com/kptdev/kpt/discussions/categories/community-meetings?discussions_q=is%3Aopen+category%3A%22Community+meetings%22). Agreed code owners are added to the CODEOWNERS file of their repo and will
   be part of the [approvers](https://github.com/orgs/kptdev/teams/approvers) team.
 - Maintainers of the project are code owners or community managers suggested and agreed our regular
-  [commnuity calls](https://github.com/kptdev/kpt/discussions/categories/community-meetings?discussions_q=is%3Aopen+category%3A%22Community+meetings%22). Agreed maintainers are added to the
-  [maintainers](https://github.com/orgs/kptdev/teams/maintainers) group and listed in the
-  [maintainer list in the .project repo](https://github.com/kptdev/.project/blob/main/maintainers.yaml)
+  [commnuity calls](https://github.com/kptdev/kpt/discussions/categories/community-meetings?discussions_q=is%3Aopen+category%3A%22Community+meetings%22). There should be no more than three (3) maintainers from the same company.
+  Agreed maintainers are added to the [maintainers](https://github.com/orgs/kptdev/teams/maintainers) group and listed
+  in the [maintainer list in the .project repo](https://github.com/kptdev/.project/blob/main/maintainers.yaml)
 
 ## Release handling
 
