@@ -25,7 +25,8 @@ Interested in joining the kpt community? Here's how to get started:
 
 If your organization is using kpt and would like to be listed here, please:
 
-1. Submit a pull request to our [governance repository](https://github.com/kptdev/governance) ([adopters list in the markdown file](https://github.com/kptdev/governance/blob/main/adopters.md)).
+1. Submit a pull request to this [adopters list](https://github.com/kptdev/governance/blob/main/adopters.md) in our
+[governance repository](https://github.com/kptdev/governance).
 2. Include your organization name and use case.
 3. Please keep the list in alphabetical order.
 4. Provide any relevant metrics or success stories.
