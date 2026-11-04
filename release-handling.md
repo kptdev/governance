@@ -34,6 +34,12 @@ Core maintainers take turns triaging the issue queue (week on, week off). The re
 
 A PR can only be merged only if:
 * All tests are passing for that PR
+* The PR has at least 2 approvals and the approvers are not from the same company.
+* The PR has at least 2 approvals from the members of the [approvers](https://github.com/orgs/kptdev/teams/approvers)
+  group and at least 1 approvals from a member of the [maintainers](https://github.com/orgs/kptdev/teams/maintainers)
+  group
+* The PR has an approval from one of the code owners of the repo. Code owners are defined in the CODEOWNERS file in each
+  repo.
 * The PR has has approvals from two maintainers from two organizations. The GitHub Review tool is used to approve
 * The PR's milestone is set to the current Minor or Patch release. Ensure that in the course of Minor and Patch release work,
   you never merge PRs labeled with the next Major version. For example, while v1 is the current Major version,

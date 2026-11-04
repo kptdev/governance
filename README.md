@@ -6,11 +6,29 @@ This repository contains information about how the kpt project is governed.
 
 All repos of kpt, the repos under the [kptdev](https://github.com/kptdev/) organisation, are under the governance
 described here. 
-Every repo has two code owners defined in the CODEOWNERS file of the repo. All prs should be approved by both code
-owners and the code owners should not be from the same company.
-Any contributor who contributes at least 10% of the code in a release can become a code owner if they wish to and do not
-work for a company already represented as code owner. Even if the number of code owners is higher than 2 only 2
-approvals are needed to merge a pr.
+Every repo has two code owners defined in the CODEOWNERS file of the repo and the kptdev GitHub organization has an
+[approvers](https://github.com/orgs/kptdev/teams/approvers) and a
+[maintainers](https://github.com/orgs/kptdev/teams/maintainers) group. Each PR should have at least 2 approvals and the
+approvers should not be from the same company. Each PR should have at least 2 approvals from the members of the
+[approvers](https://github.com/orgs/kptdev/teams/approvers) group and at least 1 approvals from a member of the
+[maintainers](https://github.com/orgs/kptdev/teams/maintainers) group. Each PR should have an approval from one of the
+code owners of the repo. Code owners are defined in the CODEOWNERS file in each repo.
+
+### Contributor ladder
+
+- Anyone with a GitHub account can propose a pull request or raise an issue
+- We add persons to the kptdev GitHub organization after the community agreed to add someone in one of our regular
+  [commnuity calls](https://github.com/kptdev/kpt/discussions/categories/community-meetings?discussions_q=is%3Aopen+category%3A%22Community+meetings%22). Any community member can propose the addition of anyone who has at least one
+  merged PR to any of the repos in the kptdev GitHub organization.
+- Any members of the kptdev GitHub organization can be promoted to be a code owner of any repository in the kptdev
+  GitHub organization if they contribute at least 10% of the code in a release and if they do not work for a company
+  already represented as code owner. Code owners are suggested and agreed in our regular
+  [commnuity calls](https://github.com/kptdev/kpt/discussions/categories/community-meetings?discussions_q=is%3Aopen+category%3A%22Community+meetings%22). Agreed code owners are added to the CODEOWNERS file of their repo and will
+  be part of the [approvers](https://github.com/orgs/kptdev/teams/approvers) team.
+- Maintainers of the project are code owners or community managers suggested and agreed our regular
+  [commnuity calls](https://github.com/kptdev/kpt/discussions/categories/community-meetings?discussions_q=is%3Aopen+category%3A%22Community+meetings%22). There should be no more than three (3) maintainers from the same company.
+  Agreed maintainers are added to the [maintainers](https://github.com/orgs/kptdev/teams/maintainers) group and listed
+  in the [maintainer list in the .project repo](https://github.com/kptdev/.project/blob/main/maintainers.yaml)
 
 ## Release handling
 
